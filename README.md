@@ -1,4 +1,4 @@
-# Line Bot Toy with Python FastAPI
+# Line Bot Toy with Python FastAPI and ngrok
 
 ## Developing Requirements
 
@@ -28,12 +28,15 @@ $ rmdir /s venv     # remove the venv
 Edit the `.env` file with your `YOUR_CHANNEL_ACCESS_TOKEN` and `YOUR_CHANNEL_SECRET`
 
 ```shell
-$ cp .env.example .env2
+$ cp .env.example .env
 ```
 
 ```shell
 $ python main.py
+```
 
-$ ngrok http http://localhost:8080
+```shell
+$ brew install ngrok
+$ ngrok http 8080
 ```
 
